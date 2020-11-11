@@ -9,20 +9,20 @@
 <h1>postgreSQL重构索引</h1><br/>
 	<div>REINDEX { INDEX | TABLE | DATABASE | SYSTEM } 名称</div><br/>
 	<div>
-INDEX
-重新建立指定的索引
+INDEX<br/>
+重新建立指定的索引；<br/>
 
-TABLE
-重新建立指定表的所有索引。如果表有从属的"TOAST"表，那么这个表也会重新索引。
+TABLE<br/>
+重新建立指定表的所有索引。<br/>
 
-DATABASE
-重建当前数据库里的所有索引。除非在独立模式下(见下文)，否则会忽略在共享系统表上的索引。这种形式的 REINDEX 不能在事务块中执行。
+DATABASE<br/>
+重建当前数据库里的所有索引。<br/>
 
-SYSTEM
-在当前数据库上重建所有系统表上的索引。不会处理在用户表上的索引。另外，除非是在独立模式下(见下文)，否则会忽略在共享系统表上的索引。这种形式的 REINDEX 不能在事务块中执行。
+SYSTEM<br/>
+在当前数据库上重建所有系统表上的索引。<br/>
 
-name
-需要重建索引的索引、表、数据库的名称。表和索引名可以有模式修饰。目前，REINDEX DATABASE 和 REINDEX SYSTEM 只能重建当前数据库的索引，因此其参数必须匹配当前数据库的名字。
+name<br/>
+需要重建索引的索引、表、数据库的名称。<br/>
 
 </div>
 </body>
